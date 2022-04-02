@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be75f6-8cfa-4f06-a153-ec7b21dea98a" name="Changes" comment="" />
+    <list default="true" id="f3be75f6-8cfa-4f06-a153-ec7b21dea98a" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/graphstrees/Graph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/graphstrees/Graph.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,8 +71,24 @@
       <workItem from="1648787526318" duration="676000" />
       <workItem from="1648788240505" duration="1461000" />
       <workItem from="1648848396379" duration="2578000" />
-      <workItem from="1648853220898" duration="386000" />
+      <workItem from="1648853220898" duration="738000" />
+      <workItem from="1648864564816" duration="3782000" />
     </task>
+    <task id="LOCAL-00001" summary="added gitignore">
+      <created>1648853649702</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648853649702</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1648853770729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648853770729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +104,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added gitignore" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

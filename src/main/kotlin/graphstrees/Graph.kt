@@ -2,6 +2,7 @@ package graphstrees
 
 class Graph<T> {
     private val map = HashMap<T,Node<T>>();
+    private val visitedNodes = HashSet<T>();
     fun addNode(data: T) {
         map[data] = Node(data);
     }
@@ -15,20 +16,31 @@ class Graph<T> {
             value.printAdjacent();
         }
     }
-    fun dfs(startingPoint : T) : String {
-        return "";
+    fun dfs(currentNodeKey : T) {
+        if (map[currentNodeKey] == null) {
+            println("Given node of $currentNodeKey does not exist.");
+        }
+        visitedNodes.add(currentNodeKey);
+        print("$currentNodeKey ");
+        for(k in map[currentNodeKey]?.getList()!!) {
+            // prevent cycle using the hashset
+            if(!visitedNodes.contains(k)) {
+                dfs(k);
+            }
+        }
     }
-    fun bfs(startingPoint: T) : String {
-        return "";
+    fun bfs(startingPoint: T) {
     }
-    fun djikstras(startingPoint: T) : String {
-        return "";
+    fun djikstras(startingPoint: T){
     }
     private class Node<T> (data: T) {
-        val adjacentNodes=ArrayList<T>();
-        val d = data;
+        private val adjacentNodes=ArrayList<T>();
+        private val d = data;
         public fun getData() : T {
             return d;
+        }
+        public fun getList() : ArrayList<T> {
+            return adjacentNodes;
         }
         public fun addEdge(t: T) {
             adjacentNodes.add(t);
