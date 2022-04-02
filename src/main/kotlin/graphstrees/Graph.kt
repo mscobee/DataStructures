@@ -1,5 +1,10 @@
 package graphstrees
 
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
+import kotlin.collections.HashSet
+
 class Graph<T> {
     private val map = HashMap<T,Node<T>>();
     private val visitedNodes = HashSet<T>();
@@ -10,13 +15,11 @@ class Graph<T> {
         map[n1]?.addEdge(n2);
         map[n2]?.addEdge(n1);
     }
-    fun printGraph(){
-        for ((key,value) in map.entries){
-            print("Key: $key \t Adjacent Nodes: ");
-            value.printAdjacent();
-        }
+    fun dfs(currentNodeKey: T) {
+        visitedNodes.clear();
+        dfsrec(currentNodeKey);
     }
-    fun dfs(currentNodeKey : T) {
+    private fun dfsrec(currentNodeKey : T) {
         if (map[currentNodeKey] == null) {
             println("Given node of $currentNodeKey does not exist.");
         }
@@ -25,11 +28,18 @@ class Graph<T> {
         for(k in map[currentNodeKey]?.getList()!!) {
             // prevent cycle using the hashset
             if(!visitedNodes.contains(k)) {
-                dfs(k);
+                dfsrec(k);
             }
         }
     }
-    fun bfs(startingPoint: T) {
+    fun bfs() {
+        visitedNodes.clear();
+    }
+    fun bfsrec(currentNodeKey: T) {
+        val q: Queue<T> = LinkedList<T>();
+        var currentList: ArrayList<T>? = map[currentNodeKey]?.getList();
+
+
     }
     fun djikstras(startingPoint: T){
     }

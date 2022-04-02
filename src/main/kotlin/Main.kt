@@ -26,4 +26,6 @@ fun main(args: Array<String>) {
 //    g.printGraph();
     print("DFS: ");
     g.dfs("Glenn");
+//    println("BFS");
+//    g.bfs("Mike");
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be75f6-8cfa-4f06-a153-ec7b21dea98a" name="Changes" comment="initial commit">
+    <list default="true" id="f3be75f6-8cfa-4f06-a153-ec7b21dea98a" name="Changes" comment="added dfs to graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/graphstrees/Graph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/graphstrees/Graph.kt" afterDir="false" />
@@ -72,7 +72,9 @@
       <workItem from="1648788240505" duration="1461000" />
       <workItem from="1648848396379" duration="2578000" />
       <workItem from="1648853220898" duration="738000" />
-      <workItem from="1648864564816" duration="3782000" />
+      <workItem from="1648864564816" duration="4008000" />
+      <workItem from="1648874149111" duration="1644000" />
+      <workItem from="1648918567998" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1648853649702</created>
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648853770729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added dfs to graph">
+      <created>1648870522220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648870522220</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added gitignore" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="added dfs to graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dfs to graph" />
   </component>
 </project>
