@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be75f6-8cfa-4f06-a153-ec7b21dea98a" name="Changes" comment="added dfs to graph">
+    <list default="true" id="f3be75f6-8cfa-4f06-a153-ec7b21dea98a" name="Changes" comment="added bfs function not finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/graphstrees/Graph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/graphstrees/Graph.kt" afterDir="false" />
@@ -44,6 +44,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -74,7 +75,11 @@
       <workItem from="1648853220898" duration="738000" />
       <workItem from="1648864564816" duration="4008000" />
       <workItem from="1648874149111" duration="1644000" />
-      <workItem from="1648918567998" duration="164000" />
+      <workItem from="1648918567998" duration="224000" />
+      <workItem from="1648937511196" duration="40000" />
+      <workItem from="1648938131202" duration="49000" />
+      <workItem from="1648963434777" duration="953000" />
+      <workItem from="1649024771789" duration="1010000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1648853649702</created>
@@ -97,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648870522220</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added bfs function not finished">
+      <created>1648918783756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648918783756</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +130,7 @@
     <MESSAGE value="added gitignore" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="added dfs to graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dfs to graph" />
+    <MESSAGE value="added bfs function not finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bfs function not finished" />
   </component>
 </project>

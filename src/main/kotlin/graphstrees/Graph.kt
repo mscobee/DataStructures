@@ -8,6 +8,7 @@ import kotlin.collections.HashSet
 class Graph<T> {
     private val map = HashMap<T,Node<T>>();
     private val visitedNodes = HashSet<T>();
+    private val q: Deque<T> = LinkedList<T>();
     fun addNode(data: T) {
         map[data] = Node(data);
     }
@@ -32,13 +33,24 @@ class Graph<T> {
             }
         }
     }
-    fun bfs() {
+    fun bfs(currentNodeKey: T) {
+        var current: T
         visitedNodes.clear();
-    }
-    fun bfsrec(currentNodeKey: T) {
-        val q: Queue<T> = LinkedList<T>();
-        var currentList: ArrayList<T>? = map[currentNodeKey]?.getList();
+        val nodesToVisit: Queue<T> = LinkedList<T>()
+        nodesToVisit.add(currentNodeKey)
+        visitedNodes.add(currentNodeKey)
 
+        while(!nodesToVisit.isEmpty()) {
+            current = nodesToVisit.remove()
+            println(current)
+
+            for(node in map[current]?.getList()!!) {
+                if(!visitedNodes.contains(node)) {
+                    visitedNodes.add(node)
+                    nodesToVisit.add(node)
+                }
+            }
+        }
 
     }
     fun djikstras(startingPoint: T){
